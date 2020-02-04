@@ -57,6 +57,8 @@ class Owner
   def sell_pets
     Cat.all.each {|m| m.mood = "nervous"}
     Cat.all
+    Cat.all.each {|m| m.owner = ""}
+    Cat.all
     Dog.all.each {|m| m.mood = "nervous"}
     Dog.all
     
