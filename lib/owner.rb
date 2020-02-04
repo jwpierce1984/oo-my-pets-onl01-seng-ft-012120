@@ -61,6 +61,8 @@ class Owner
     Cat.all
     Dog.all.each {|m| m.mood = "nervous"}
     Dog.all
+    Dog.all.each {|m| m.owner = ""}
+    Dog.all
     
   end
   
