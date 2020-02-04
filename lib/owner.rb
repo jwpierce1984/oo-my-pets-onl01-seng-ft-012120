@@ -61,13 +61,11 @@ class Owner
       pet.mood = "nervous"
       pet.owner = nil
     end
-    
-#    Cat.all.each {|m| m.mood = "nervous"}
-#    Cat.all.each {|m| m.owner = nil}
-#    Cat.all
-#    Dog.all.each {|m| m.mood = "nervous"}
-#    Dog.all.each {|m| m.owner = nil}
-#    Dog.all
+  end
+  
+  def list_pets
+    pets = self.dogs + self.cats
+    "#<pets>"
   end
   
 end
