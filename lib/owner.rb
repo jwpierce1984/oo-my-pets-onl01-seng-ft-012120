@@ -55,9 +55,9 @@ class Owner
   end
   
   def sell_pets
-    Cat.all.each {(|m| (m.mood = "nervous")&&(m.owner = ""))}
+    Cat.all.each {|m| (m.mood = "nervous")&&(m.owner = "")}
     Cat.all
-    Dog.all.each {(|m| (m.mood = "nervous")&&(m.owner = ""))}
+    Dog.all.each {|m| (m.mood = "nervous")&&(m.owner = "")}
     Dog.all
     
   end
