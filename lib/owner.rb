@@ -61,7 +61,6 @@ class Owner
     Dog.all.each {|m| m.mood = "nervous"}
     Dog.all.each {|m| m.owner = nil}
     Dog.all
-    
   end
   
 end
